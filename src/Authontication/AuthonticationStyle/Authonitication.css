@@ -1,0 +1,314 @@
+.register__page{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    background-color: #884EA0;
+    z-index: -1;
+}
+.register__page .ppt{
+    margin-right: 50px;
+} 
+.register__div{
+   min-width: 40%;
+   height: 450px!important;
+   box-shadow: 0 0 15px 0px rgba(0,0, 0,0.8);
+   border-radius: 20px;
+   margin-right: 100px!important;
+   z-index: 999!important;
+    background-color: #fff;
+}
+.register__form{
+    max-width: 650px;
+    width: 90%;
+    margin: 25px auto;
+
+}
+.register__form .register__heading{
+   display: inline-block;
+   font-weight: 400;
+   text-align: center;
+   width: 100%;
+   text-transform: uppercase;
+}
+.register__form input{
+    display: flex!important;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px!important;
+    font-size: 1rem;
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #a3a2a2;
+}
+.register__form input:focus{
+    box-shadow: none;
+}
+.register__form input::placeholder{
+    font-size: 1rem!important;
+    text-transform: capitalize;
+    margin-left: 1rem;
+}
+ .register__div .register_btn{
+    margin-top: 25px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    } 
+    .register_btns a{
+        display: inline-block;
+     text-decoration: none;
+     text-transform: capitalize;
+     margin-top: 10px!important;
+     font-size: 1.2rem;   
+     }
+
+    /* login_____page */
+.login__page{
+        width: 100%;
+        height: 100vh;
+        background-color: #884EA0;
+        z-index: -1;
+}
+.login__parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.login__page .ppt{
+        order: 2;
+        z-index: 333;
+    }
+.login__div{
+       min-width: 40%;
+       height: 450px!important;
+       box-shadow: 0 0px 25px 0px rgba(0,0, 0,0.8);
+       border-radius: 20px;
+       order: 1;
+       background-color: #FFF;
+       margin-left: 120px;
+       z-index: 999;
+    }
+  .login__form{
+        max-width: 650px;
+        width: 90%;
+        margin: 70px auto;
+    }
+    .login__form .login__heading{
+       display: inline-block;
+       font-weight: 400;
+       text-align: center;
+       width: 100%;
+       text-transform: uppercase;
+    }
+    .login__form input{
+        display: flex!important;
+        width: 100%;
+        height: 40px;
+        margin-top: 30px!important;
+        font-size: 1rem;
+        padding-left: 1rem;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #a3a2a2;
+    }
+    .login__form input:focus{
+        box-shadow: none;
+    }
+    .login__form input::placeholder{
+        font-size: 1rem!important;
+        text-transform: capitalize;
+        margin-left: 1rem;
+    }
+     .login__div .login_btn{
+        margin-top: 25px;
+        } 
+    .login_btns a{
+        display: inline-block;
+        text-decoration: none!important;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        margin-top: 17px;
+    }
+    @media (max-width:500px){
+        .register__page .ppt{
+            display: none;
+        }
+        .register__div{
+            width: 90%;
+            height: auto!important;
+            margin-right: 0!important;
+        }
+        .register__form .register__heading h1{
+            font-size: 1.3rem!important;
+            display: block;
+        }
+        .register__form input{
+            height: 30px;
+        }
+        .register__div .register_btn{
+            font-size: 1rem!important;
+            margin-top: 15px;
+        }
+        .register_btns a{
+            font-size: .9rem;
+        }
+    }
+    @media (min-width:501px) and (max-width:768px){
+        .register__page .ppt{
+            display: none;
+        }
+        .register__div{
+            width: 90%;
+            height: auto!important;
+            margin-right: 0!important;
+        }
+        .register__form .register__heading h1{
+            font-size: 1.7rem!important;
+            display: block;
+        }
+        .register__form input{
+            height: 40px;
+        }
+        .register__div .register_btn{
+            font-size: 1.2rem!important;
+            margin-top: 15px;
+        }
+        .register_btns a{
+            font-size: 1rem;
+        }
+    }
+    @media (min-width:769px) and (max-width:968px){
+        .register__page .ppt{
+          display: none;
+
+        }
+        .register__div{
+            width: 70%;
+            height: 450px!important;
+            margin-right: 0!important;
+        }
+        .register__form .register__heading h1{
+            font-size: 1.7rem!important;
+            display: block;
+        }
+        .register__form input{
+            height: 40px;
+        }
+        .register__div .register_btn{
+            font-size: 1.2rem!important;
+            margin-top: 15px;
+        }
+        .register_btns a{
+            font-size: 1rem;
+        }
+    }
+    @media (min-width:969px) and (max-width:1150px){
+        .register__page{
+            justify-content: space-around;
+        }
+        .register__div{
+            height: auto!important;
+            margin-right: 0!important;
+            border: 2px solid red;
+        }
+        .register__page .ppt{
+          margin: 0!important;
+          width: 500px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .register__form .register__heading h1{
+            font-size: 1.7rem!important;
+            display: block;
+        }
+        .register__form input{
+            height: 40px;
+        }
+        .register__div .register_btn{
+            font-size: 1.2rem!important;
+            margin-top: 15px;
+        }
+        .register_btns a{
+            font-size: 1rem;
+        } 
+     } 
+
+     /* login__page__responsive0 */
+     @media (max-width:480px){
+         .login__page .ppt{
+             display: none;
+         }
+         .login__div{
+             min-width: 90%;
+             height: auto!important;
+             margin: 0;
+         }
+         .login__form .login__heading h1{
+             display: inline-block;
+             font-size: 1.5rem!important;
+         }
+         .login__form input{
+             height: 30px;
+         }
+         .login_btns a{
+             font-size: 1rem;
+         }
+     }
+     @media (min-width:481px) and (max-width:768px){
+        .login__page .ppt{
+            display: none;
+        }
+        .login__div{
+            min-width: 90%;
+            height: auto!important;
+            margin: 0;
+        }
+        .login__form .login__heading h1{
+            display: inline-block;
+            font-size: 2rem!important;
+        }
+        .login__form input{
+            height: 40px;
+        }
+        .login_btns a{
+            font-size: 1.2rem;
+        }
+    }
+    @media (min-width:769px) and (max-width:968px){
+        .login__page .ppt{
+            display: none;
+        }
+        .login__div{
+            min-width: 80%;
+            height: auto!important;
+            margin: 0;
+        }
+        .login__form .login__heading h1{
+            display: inline-block;
+            font-size: 2.1rem!important;
+        }
+        .login__form input{
+            height: 50px;
+        }
+        .login_btns a{
+            font-size: 1.3rem;
+        }
+    }
+    @media (min-width:969px) and (max-width:1150px){
+        .login__parent{
+            display: flex;
+            justify-content: space-around;
+        }
+        .login__page .ppt{
+            width: 45%;
+            height: auto;
+        }
+      .login__div{
+          margin: 0;
+      }
+    }
